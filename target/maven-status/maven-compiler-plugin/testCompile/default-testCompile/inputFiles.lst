@@ -1,1 +1,6 @@
-D:\JavaProgs\t-bank\hw1-hangman\app-java\src\test\java\academy\SampleTest.java
+D:\JavaProgs\hangman\src\test\java\engine\GameEngineTest.java
+D:\JavaProgs\hangman\src\test\java\screens\GameScreenTest.java
+D:\JavaProgs\hangman\src\test\java\screens\MainMenuScreenTest.java
+D:\JavaProgs\hangman\src\test\java\screens\StartEndScreenTest.java
+D:\JavaProgs\hangman\src\test\java\utils\DictionaryLoaderTest.java
+D:\JavaProgs\hangman\src\test\java\utils\InputValidatorTest.java

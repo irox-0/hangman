@@ -1,2 +1,6 @@
-academy\SampleTest$Student.class
-academy\SampleTest.class
+utils\InputValidatorTest.class
+screens\GameScreenTest.class
+screens\StartEndScreenTest.class
+utils\DictionaryLoaderTest.class
+screens\MainMenuScreenTest.class
+engine\GameEngineTest.class
