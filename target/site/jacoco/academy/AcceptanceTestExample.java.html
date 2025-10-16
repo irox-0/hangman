@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AcceptanceTestExample.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">hangman</a> &gt; <a href="index.source.html" class="el_package">academy</a> &gt; <span class="el_source">AcceptanceTestExample.java</span></div><h1>AcceptanceTestExample.java</h1><pre class="source lang-java linenums">package academy;
+
+import java.util.List;
+import java.util.Map;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import static java.util.Map.entry;
+
+public class AcceptanceTestExample {
+
+    private AcceptanceTestExample() {
+    }
+
+    // Используй вызов движка игры вместо хардкода тестовых данных
+<span class="nc" id="L15">    public static final Map&lt;String, List&lt;Map.Entry&lt;Predicate&lt;String&gt;, Supplier&lt;String&gt;&gt;&gt;&gt; TEST_CASES_DUMMY = Map.of(</span>
+<span class="nc" id="L16">        &quot;волокно&quot;, List.of(</span>
+<span class="nc" id="L17">            entry(&quot;толокно&quot;::equalsIgnoreCase, () -&gt; &quot;*олокно;NEG&quot;),</span>
+<span class="nc" id="L18">            entry(&quot;барахло&quot;::equalsIgnoreCase, () -&gt; &quot;******о;NEG&quot;)</span>
+        ),
+<span class="nc" id="L20">        &quot;окно&quot;, List.of(entry(&quot;окно&quot;::equalsIgnoreCase, () -&gt; &quot;окно;POS&quot;))</span>
+    );
+<span class="nc" id="L22">    public static final List&lt;Map.Entry&lt;Predicate&lt;String&gt;, Supplier&lt;String&gt;&gt;&gt; UNKNOWN_TEST_WORD = List.of(</span>
+<span class="nc" id="L23">        entry(_ -&gt; true, () -&gt; &quot;Unknown word&quot;)</span>
+    );
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
